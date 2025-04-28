@@ -1,0 +1,99 @@
+{
+  "folders": [
+    {
+      "id": "C01QYDRS",
+      "name": "Default",
+      "defaultLanguage": "typescript",
+      "parentId": null,
+      "isOpen": false,
+      "isSystem": false,
+      "createdAt": 1735013538277,
+      "updatedAt": 1735013538277
+    },
+    {
+      "name": "Astro",
+      "parentId": null,
+      "isOpen": false,
+      "isSystem": false,
+      "defaultLanguage": "forth",
+      "id": "xPs1q-Kh",
+      "createdAt": 1735014691867,
+      "updatedAt": 1735014714729
+    }
+  ],
+  "snippets": [
+    {
+      "isDeleted": true,
+      "isFavorites": false,
+      "folderId": "",
+      "tagsIds": [],
+      "description": null,
+      "name": "",
+      "content": [
+        {
+          "label": "Fragmento 1",
+          "language": "plain_text",
+          "value": ""
+        }
+      ],
+      "id": "T6cQtINK",
+      "createdAt": 1735014666236,
+      "updatedAt": 1735014682080
+    },
+    {
+      "isDeleted": false,
+      "isFavorites": false,
+      "folderId": "xPs1q-Kh",
+      "tagsIds": [],
+      "description": null,
+      "name": "serverActions",
+      "content": [
+        {
+          "label": "Fragmento 1",
+          "language": "forth",
+          "value": "import { defineAction } from \"astro:actions\";\nimport { z } from \"astro:schema\"\n\n\nexport const registerUser = defineAction({\n    accept: 'form',\n    input: z.object({\n        name: z.string().min(2),\n        email: z.string().email(),\n        password: z.string().min(6).max(20),\n        remember_me: z.boolean(),\n\n    }),\n    handler: async (object, { cookies }) => {\n\n    }\n})"
+        }
+      ],
+      "id": "CuWR6dh1",
+      "createdAt": 1735014716390,
+      "updatedAt": 1745854439227
+    },
+    {
+      "isDeleted": false,
+      "isFavorites": false,
+      "folderId": "xPs1q-Kh",
+      "tagsIds": [],
+      "description": null,
+      "name": "Instalar Bootstrap en Astro",
+      "content": [
+        {
+          "label": "Fragmento 1",
+          "language": "markdown",
+          "value": "```\nnpm install bootstrap@latest sass@^1.56.1\n```\n\nAgrregar un archivo que se llame \n\n```\nbootstrap.scss\n\n// src/styles/custom.scss\n@import \"bootstrap/scss/bootstrap\";\n\n// Tus personalizaciones\n$primary: #ff0000;\n```"
+        }
+      ],
+      "id": "KVNSRTYV",
+      "createdAt": 1745854137313,
+      "updatedAt": 1745854419768
+    },
+    {
+      "isDeleted": true,
+      "isFavorites": false,
+      "folderId": "xPs1q-Kh",
+      "tagsIds": [],
+      "description": null,
+      "name": "Snippet sin nombre",
+      "content": [
+        {
+          "label": "Fragmento 1",
+          "language": "forth",
+          "value": ""
+        }
+      ],
+      "id": "PfMKVsf4",
+      "createdAt": 1745854339835,
+      "updatedAt": 1745854429614
+    }
+  ],
+  "tags": []
+}
