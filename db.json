@@ -1,16 +1,6 @@
 {
   "folders": [
     {
-      "id": "C01QYDRS",
-      "name": "Default",
-      "defaultLanguage": "typescript",
-      "parentId": null,
-      "isOpen": false,
-      "isSystem": false,
-      "createdAt": 1735013538277,
-      "updatedAt": 1735013538277
-    },
-    {
       "name": "Astro",
       "parentId": null,
       "isOpen": false,
@@ -19,6 +9,36 @@
       "id": "xPs1q-Kh",
       "createdAt": 1735014691867,
       "updatedAt": 1735014714729
+    },
+    {
+      "name": "Html +Css",
+      "parentId": null,
+      "isOpen": false,
+      "isSystem": false,
+      "defaultLanguage": "plain_text",
+      "id": "HPkIUBXV",
+      "createdAt": 1745858160261,
+      "updatedAt": 1745885931279
+    },
+    {
+      "name": "Php",
+      "parentId": null,
+      "isOpen": false,
+      "isSystem": false,
+      "defaultLanguage": "plain_text",
+      "id": "uzReaifw",
+      "createdAt": 1745860505448,
+      "updatedAt": 1745885939999
+    },
+    {
+      "name": "Contenedores",
+      "parentId": null,
+      "isOpen": false,
+      "isSystem": false,
+      "defaultLanguage": "plain_text",
+      "id": "I6_ve_fO",
+      "createdAt": 1748569982539,
+      "updatedAt": 1748570258934
     }
   ],
   "snippets": [
@@ -93,6 +113,88 @@
       "id": "PfMKVsf4",
       "createdAt": 1745854339835,
       "updatedAt": 1745854429614
+    },
+    {
+      "isDeleted": false,
+      "isFavorites": false,
+      "folderId": "HPkIUBXV",
+      "tagsIds": [],
+      "description": null,
+      "name": "Layout Flex",
+      "content": [
+        {
+          "label": "Fragmento 1",
+          "language": "css",
+          "value": "body, html {\n  height: 100%; /* Para asegurar que ocupe todo el alto de la ventana */\n  background-color:white ;\n}\n\n.wrapper {\n  min-height: 100vh; /* Altura mínima para ocupar todo el viewport */\n  display: flex;\n  flex-direction: column; /* Ordenar en columna */\n}\n\n.content {\n  flex: 1; /* Hacer que la sección principal ocupe el espacio disponible */\n}"
+        }
+      ],
+      "id": "ZBZN2EHM",
+      "createdAt": 1745858177784,
+      "updatedAt": 1745858289645
+    },
+    {
+      "isDeleted": false,
+      "isFavorites": false,
+      "folderId": "HPkIUBXV",
+      "tagsIds": [],
+      "description": null,
+      "name": "Imagen Fixed",
+      "content": [
+        {
+          "label": "Html",
+          "language": "plain_text",
+          "value": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Imagen de fondo en movimiento</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <div class=\"container\">\n    <div class=\"content\">\n      <h1>¡Imagen de fondo en movimiento!</h1>\n      <p>¡Haz scroll para ver el efecto!</p>\n    </div>\n  </div>\n\n  <script src=\"script.js\"></script>\n</body>\n</html>\n"
+        },
+        {
+          "label": "Fragmento 2",
+          "language": "plain_text",
+          "value": "body {\n  margin: 0;\n  font-family: Arial, sans-serif;\n}\n\n.container {\n  height: 2000px; /* Para hacer scroll */\n  background-image: url('tu-imagen-de-fondo.jpg');\n  background-size: cover;\n  background-attachment: fixed; /* Esto fija la imagen de fondo */\n}\n\n.content {\n  padding: 20px;\n  text-align: center;\n  color: white;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n"
+        },
+        {
+          "label": "Fragmento 3",
+          "language": "plain_text",
+          "value": "window.addEventListener('scroll', function() {\n  var yPos = -window.scrollY / 2; // Controla la velocidad de movimiento\n  var bg = document.querySelector('.container');\n  bg.style.backgroundPosition = 'center ' + yPos + 'px';\n});\n"
+        }
+      ],
+      "id": "Y183aUsJ",
+      "createdAt": 1745860519039,
+      "updatedAt": 1745860557975
+    },
+    {
+      "isDeleted": false,
+      "isFavorites": false,
+      "folderId": "HPkIUBXV",
+      "tagsIds": [],
+      "description": null,
+      "name": "Select Php",
+      "content": [
+        {
+          "label": "Fragmento 1",
+          "language": "plain_text",
+          "value": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Seleccionar Opción</title>\n</head>\n<body>\n\n<form action=\"procesar_formulario.php\" method=\"post\">\n    <label for=\"opcion\">Selecciona una opción:</label>\n    <select name=\"opcion\" id=\"opcion\">\n        <?php\n        // Itera sobre el array de opciones y genera las etiquetas de opción\n        foreach ($options as $option) {\n            echo \"<option value='$option'>$option</option>\";\n        }\n        ?>\n    </select>\n    <input type=\"submit\" value=\"Enviar\">\n</form>\n\n</body>\n</html>\n"
+        }
+      ],
+      "id": "2i8bZOdr",
+      "createdAt": 1745860727758,
+      "updatedAt": 1745860731869
+    },
+    {
+      "isDeleted": false,
+      "isFavorites": false,
+      "folderId": "I6_ve_fO",
+      "tagsIds": [],
+      "description": null,
+      "name": "Contenedor mysql",
+      "content": [
+        {
+          "label": "Fragmento 1",
+          "language": "plain_text",
+          "value": "podman run --name mariadbLatest -d -p 3310:3306 -e MARIADB_USER=laragon -e MARIADB_PASSWORD=LocalTest -e MARIADB_DATABASE=newDatabase -e MARIADB_ROOT_PASSWORD=LocalTest -v mariadb:/var/lib/mysql  mariadb:latest"
+        }
+      ],
+      "id": "RDv-lVZ4",
+      "createdAt": 1748570216683,
+      "updatedAt": 1748570252820
     }
   ],
   "tags": []
